@@ -51,7 +51,6 @@ module Package
     DEFAULT_REPOSITORY_ROOT_PATTERN = /\{default.repository.root\}/
 
     NAME_MAPPINGS = {
-<<<<<<< HEAD
       'access_logging_support'           => 'Tomcat Access Logging Support',
       'agent'                            => 'Java Memory Assistant Agent',
       'app_dynamics_agent'               => 'AppDynamics Agent',

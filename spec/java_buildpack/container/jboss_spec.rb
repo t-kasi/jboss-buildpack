@@ -35,7 +35,7 @@ describe JavaBuildpack::Container::Jboss do
   end
 
   it 'extracts JBoss from a GZipped TAR',
-     app_fixture:   'container_tomcat',
+     app_fixture: 'container_tomcat',
      cache_fixture: 'stub-jboss.tar.gz' do
 
     component.compile
@@ -44,7 +44,7 @@ describe JavaBuildpack::Container::Jboss do
   end
 
   it 'manipulates the standalone configuration',
-     app_fixture:   'container_tomcat',
+     app_fixture: 'container_tomcat',
      cache_fixture: 'stub-jboss.tar.gz' do
 
     component.compile
@@ -57,7 +57,7 @@ describe JavaBuildpack::Container::Jboss do
   end
 
   it 'creates a "ROOT.war.dodeploy" in the deployments directory',
-     app_fixture:   'container_tomcat',
+     app_fixture: 'container_tomcat',
      cache_fixture: 'stub-jboss.tar.gz' do
 
     component.compile
@@ -66,7 +66,7 @@ describe JavaBuildpack::Container::Jboss do
   end
 
   it 'copies only the application files and directories to the ROOT webapp',
-     app_fixture:   'container_tomcat',
+     app_fixture: 'container_tomcat',
      cache_fixture: 'stub-jboss.tar.gz' do
 
     FileUtils.touch(app_dir + '.test-file')
